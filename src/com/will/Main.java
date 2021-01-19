@@ -1,24 +1,18 @@
 package com.will;
 
 public class Main {
-
     public static void main(String[] args) {
-	// write your code here
-//        Console console = new Console();
-//
-//        int value = console.getInt(1, 10, "die value (1 - 6)");
-//        int count = console.getInt(1, 14, "How many" + value + " dice: (1 - 14)");
-//
-//        Boolean result = console.getYN("Y", "N", "Did the player ");
-//
-//        System.out.println("you claim " + count + " " + value + "s");
+        LiarsDice game = new LiarsDice(2);
 
-        Player player = new Player("player1");
-        player.roll();
-        player.peek();
-        int[] claim = player.getClaim();
-        System.out.println("Player claimed there are " + claim[1] + " " + claim[0] + "s");
-        boolean decision = player.getDecision();
-        System.out.println(decision ? "Lie called" : "Play on");
+        // improvements:
+        // Print out end of round info. Call out liar and declare who lost a die.
+        // declare when a player is removed from game.
+        // improve overall print outs.
+        // clear console at start of next player turn.
+        // allow user to enter how many players.
+
+        // Major improvement:
+        // each round should start with a new player.
+        // clean code.
     }
 }
