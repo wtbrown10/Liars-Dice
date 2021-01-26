@@ -26,6 +26,15 @@ public class Console {
         System.out.println(query);
         return scanner.nextLine();
     }
+
+    public void clearScreen() {
+        int lines = 50;
+        while (lines > 0) {
+            System.out.println("\n");
+            lines--;
+        }
+        scanner.nextLine();
+    }
 }
 
 

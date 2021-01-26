@@ -45,6 +45,7 @@ public class LiarsDice {
             System.out.println("Game over " + players.get(0).getName() + " Wins!");
             return false;
         }
+
         return true;
     }
 
@@ -67,6 +68,7 @@ public class LiarsDice {
 //        } while (!isValidClaim(newClaim));
 
         claim = newClaim;
+        console.clearScreen();
         return true;
     };
 

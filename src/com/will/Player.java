@@ -46,6 +46,7 @@ public class Player {
     }
 
     public boolean isOut() {
+        System.out.println(getName() + "Is out of the game!");
         return cup.size() <= 0;
     }
 
